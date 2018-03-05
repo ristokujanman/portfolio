@@ -1,0 +1,265 @@
+
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2017 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      A is for...
+ * License URL: https://www.fontspring.com/licenses/a-is-for/webfont
+ *
+ *
+ */  
+
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@font-face {
+    font-family: 'orb15web';
+    src: url('../orb15web.otf') format('opentype');
+	  font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dualistweb-1';
+    src: url('../dualistweb-1.otf') format('opentype');
+    	font-weight: normal;
+    	font-style: normal;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 90px;
+    line-height: 100px;
+    font: 'orb15web', serif;
+    font-weight: normal;
+}
+
+p {
+    font-size:19px;
+    font-family: 'dualistweb-1', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  font-size:65px;
+  line-height: 40px;
+  font-weight: normal;
+  font-family: 'orb15web', serif;
+  z-index:100;
+}
+
+ul > li {
+  height: 90px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+	font-size:90px;
+	font-family: orb15web, serif;
+}
+
+.scrollsection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 0px solid;	
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 90px;
+}
+
+.scroller {
+	width: 100vw;
+	height: 100vh;
+  padding: 0;
+  margin: 0;
+	white-space: nowrap;
+ 	overflow: hidden;
+  flex-basis: 1;
+}
+
+.portfolio-item {
+  padding: 0;
+  margin: 0;
+ 	width: 100%;
+  height: 100%;
+	display: inline-block;
+	overflow: hidden;
+	/*margin: 5% 0 5% 12.5%; */
+	position: relative;
+  
+}
+
+.portfolio-item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.portfolio-item-text {
+    /* 75% of 100 x 3 / 4 */
+    /*padding-bottom: 56.25%;*/
+    /*margin: 5% 12.5% 5% 12.5%;*/
+    background: blue;
+    /*white-space: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;*/
+}
+
+.portfolio-item-text.ratio-16x9 {
+    /* 75% of 100 x 9 / 16 */
+    padding-bottom: 42.1875%;
+
+}
+.portfolio-item-text center {
+  height: auto;
+  max-width: 800px;
+  white-space: wrap;
+  word-wrap: normal;
+  margin: 0 auto;
+  display: block;
+  word-break: normal;
+}
+
+.portfolio-item-text p {
+  color:black;
+}
+
+.portfolio-item-text h1 {
+  color:black;
+}
+
+.portfolio-item-text a:hover {
+  font-family: "dualistweb-1";
+}
+
+.portfolio-item p {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	color:white;
+	display: none;
+}
+
+.arrow {
+    width: 30px;
+    position: absolute;
+    background-size: contain;
+    margin: 0;
+    display: none;
+}
+
+.arrow img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.text {
+  position: center;
+}
+
+header {
+  margin: 0 1.5% 24px;
+  top: 0;
+  position: fixed;
+  display: inline-block;
+  background: none;
+  z-index: 100;
+  cursor: pointer;
+}
+
+header #menu {
+  position: absolute;
+  top: calc(100% - 4px); left: 0;
+  height: auto;
+  padding: 2px 15px 0;
+  margin: 0;
+  list-style-type: none;
+  white-space: nowrap;
+  display: none;
+  z-index: 100;
+}
+
+header:hover #menu {
+
+  display: block;
+  z-index: 100;
+
+}
+
+header #menu li {
+
+  position: relative;
+  padding-bottom: 4px;
+  z-index: 100;
+
+}
+
+
+footer {
+  clear: both;
+  margin-bottom: 0;  
+  margin: 0 1.5% 12px 1.5%;
+  float: left;
+}
+
+
+code {
+  background: white;
+  border-radius: 6px;
+  color: black;
+  display: block;
+  padding: 24px 15px;
+}
+
+
+li {
+position: absolute;
+list-style-type: none;
+color: black;
+  
+}
+
+a {
+list-style-type: none;
+color: black;
+text-decoration: none;
+
+}
+
+
+/*@media only screen and (max-device-width: 1024px) {
+.scroller {
+	margin: 24px 1.5% 24px 1.5%;
+  	width: 97%;
+	height: 100%;
+    	white-space: nowrap;
+   	overflow-x: auto;
+    }	  
+}*/
