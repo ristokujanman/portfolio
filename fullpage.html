@@ -19,18 +19,6 @@
 </head>
 
 <body>
-	<!-- <header id="menu">
-		<p>Work</p>
-		<ul>
-			<li><h2><a class="hoverlink" id="kiki" href="#">Kiki</a></h2></li>
-			<li><h2><a class="hoverlink" id="putte" href="#">Putte's</a></h2></li>
-			<li><h2><a class="hoverlink" id="pingpong" href="#">Ping Pong</a></h2></li>
-			<li><h2><a class="hoverlink" id="hermesaphrodite" href="#">Hermes & Aphrodite</a></h2></li>
-			<li><h2><a class="hoverlink" id="dialogue" href="#">Dialogue</a></h2></li>
-			<li><h2><a class="hoverlink" id="mervi" href="#">Mervi Festival</a></h2></li>
-			<li><h2><a id="info" href="#">Info</a></h2></li>
-		</ul>
-	</header> -->
 	<header id='header'>
 		<p id='work'>
 			work
@@ -42,17 +30,8 @@
 			<li data-menuanchor="putte">
 				<a href="#putte">Putte</a>
 			</li>
-			<li data-menuanchor="kiki" class="active">
-				<a href="#kiki">Kiki</a>
-			</li>
-			<li data-menuanchor="putte">
-				<a href="#putte">Putte</a>
-			</li>
-			<li data-menuanchor="kiki" class="active">
-				<a href="#kiki">Risto pujankaa</a>
-			</li>
-			<li data-menuanchor="putte">
-				<a href="#kiki">Risto Kujanpaa</a>
+			<li data-menuanchor="info" class="active">
+				<a href="#info">Info</a>
 			</li>
 		</ul>
 	</header>
@@ -107,6 +86,25 @@
 				</div>
 			</div>
 		</div>
+		<!-- END SECTION -->
+		<!-- SECTION -->
+		<div class="section">
+			<div class="slide">
+				<div class="text">
+					<h1>Info</h1><br/>
+					<p>Based between The Hague and nowhere. I'm currenty studying at the Royal Academy of Art, KABK.</p>
+					<p>Internship &nbsp; <nobr><a href="http://helsinkitypestudio.com/" target="_blank">Helsinki Type Studio</a></nobr>, 2016</p>
+				</div>
+			</div>
+		</div>
+		<!-- END SECTION -->
+		<!-- FOOTER -->
+		<div class="section fp-auto-height">
+			<div class="slide">
+				<p id="footer"><a href="mailto:risto@ristokujanpaa.com">Mail</a></p>
+			</div>
+		</div>
+		<!-- END FOOTER -->
 	</div>
 
 <!--
@@ -330,7 +328,22 @@
 	</figure>
 
 <script type="text/javascript">
+
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		anchors: ['kiki', 'putte', 'info', 'foot'],
+		menu: '#menu',
+		controlArrows: false
+	});
+});
+
 var isOverMenu = false
+
+$('body').css('cursor', 'none');
+
+$('a').on('hover', function() {
+	$('body').css('cursor', 'none')
+})
 
 $('#header').on('mouseover', function() {
 	isOverMenu = true
@@ -342,21 +355,15 @@ $('#header').on('mouseout', function() {
 	$('#menu').hide()
 })
 
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-		anchors: ['kiki', 'putte'],
-		menu: '#menu',
-		controlArrows: false
-	});
-});
-
 var breakPoint = $(window).width() / 2
 
 $(document).on('click', function() {
-	if (event.screenX > breakPoint) {
-		$.fn.fullpage.moveSlideRight();
-	} else {
-		$.fn.fullpage.moveSlideLeft();
+	if (!isOverMenu) {
+		if (event.screenX > breakPoint) {
+			$.fn.fullpage.moveSlideRight();
+		} else {
+			$.fn.fullpage.moveSlideLeft();
+		}
 	}
 });
 
@@ -380,7 +387,7 @@ $('body').on('mousemove', function() {
 			});
 		} else {
 			$('#arrow-left').hide();
-			$('body').css('cursor', 'default');
+			$('body').css('cursor', 'none');
 		}
 	}
 })
