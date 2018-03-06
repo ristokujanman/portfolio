@@ -168,7 +168,7 @@ $('#header').on('mouseout', function() {
 
 var breakPoint = $(window).width() / 2
 
-$(document).on('click', function() {
+$(document).on('click', function(event) {
 	if (!isOverMenu) {
 		if (event.screenX > breakPoint) {
 			$.fn.fullpage.moveSlideRight();
@@ -178,7 +178,7 @@ $(document).on('click', function() {
 	}
 });
 
-$('body').on('mousemove', function() {
+$('body').on('mousemove', function(event) {
 	if (event.screenX > breakPoint) {
 		$('body').css('cursor', 'none');
 		$('#arrow-left').hide();
