@@ -31,6 +31,31 @@
 			<li><h2><a id="info" href="#">Info</a></h2></li>
 		</ul>
 	</header> -->
+	<header id='header'>
+		<p id='work'>
+			work
+		</p>
+		<ul id="menu">
+			<li data-menuanchor="kiki" class="active">
+				<a href="#kiki">Kiki</a>
+			</li>
+			<li data-menuanchor="putte">
+				<a href="#putte">Putte</a>
+			</li>
+			<li data-menuanchor="kiki" class="active">
+				<a href="#kiki">Kiki</a>
+			</li>
+			<li data-menuanchor="putte">
+				<a href="#putte">Putte</a>
+			</li>
+			<li data-menuanchor="kiki" class="active">
+				<a href="#kiki">Risto pujankaa</a>
+			</li>
+			<li data-menuanchor="putte">
+				<a href="#kiki">Risto Kujanpaa</a>
+			</li>
+		</ul>
+	</header>
 
 	<div id="fullpage">
 		<!-- SECTION -->
@@ -305,12 +330,60 @@
 	</figure>
 
 <script type="text/javascript">
+var isOverMenu = false
+
+$('#header').on('mouseover', function() {
+	isOverMenu = true
+	$('#menu').show()
+})
+
+$('#header').on('mouseout', function() {
+	isOverMenu = false
+	$('#menu').hide()
+})
+
 $(document).ready(function() {
 	$('#fullpage').fullpage({
+		anchors: ['kiki', 'putte'],
 		menu: '#menu',
 		controlArrows: false
 	});
 });
+
+var breakPoint = $(window).width() / 2
+
+$(document).on('click', function() {
+	if (event.screenX > breakPoint) {
+		$.fn.fullpage.moveSlideRight();
+	} else {
+		$.fn.fullpage.moveSlideLeft();
+	}
+});
+
+$('body').on('mousemove', function() {
+	if (event.screenX > breakPoint) {
+		$('body').css('cursor', 'none');
+		$('#arrow-left').hide();
+		$('#arrow-right').show();
+		$('#arrow-right').css({
+			'top' :  (event.pageY - $(".arrow").height() / 2) + 'px',
+			'left' : (event.pageX - $(".arrow").width()) + 'px'
+		});
+	} else {
+		if (!isOverMenu) {
+			$('body').css('cursor', 'none');
+			$('#arrow-right').hide();
+			$('#arrow-left').show();
+			$('#arrow-left').css({
+					'top' :  (event.pageY - $(".arrow").height() / 2) + 'px',
+					'left' : (event.pageX + 5) + 'px'
+			});
+		} else {
+			$('#arrow-left').hide();
+			$('body').css('cursor', 'default');
+		}
+	}
+})
 </script>
 
 </body>
