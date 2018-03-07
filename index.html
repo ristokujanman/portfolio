@@ -27,20 +27,21 @@
 			<li data-menuanchor="kiki" class="active">
 				<a href="#kiki">Kiki</a>
 			</li>
-			<li data-menuanchor="putte">
-				<a href="#putte">Putte's</a>
+
+			<li data-menuanchor="mervi" class="active">
+  				<a href="#mervi">Mervi Festival</a>
 			</li>
+
+			<li data-menuanchor="hermesaphrodite">
+  				<a href="#hermesaphrodite">Hermes & Aphrodite</a>
+			</li
 
 			<li data-menuanchor="pingpong">
   				<a href="#pingpong">Ping Pong</a>
 			</li>
 
-			<li data-menuanchor="hermesaphrodite">
-  				<a href="#hermesaphrodite">Hermes & Aphrodite</a>
-			</li>
-
-			<li data-menuanchor="mervi" class="active">
-  				<a href="#mervi">Mervi Festival</a>
+			<li data-menuanchor="putte">
+				<a href="#putte">Putte's</a>
 			</li>
 
 			<li data-menuanchor="dialogue">
@@ -48,7 +49,7 @@
 			</li>
 
 			<li data-menuanchor="wash">
-				<a href="#wash">wash</a>
+				<a href="#wash">Wash</a>
 			</li>
 
 			<li data-menuanchor="info">
@@ -90,24 +91,52 @@
 		<!-- END SECTION -->
 		<!-- SECTION -->
 		<div class="section">
-			<div class="slide">
-				<img class='image' src="img/tinman.jpg" />
-			</div>
-			<div class="slide">
-				<img class='image' src="img/ronwilson.jpg" />
-			</div>
-			<div class="slide">
-				<img class='image' src="img/sotofett.jpg" />
-			</div>
-			<div class="slide">
-				<div class="text">
-					<h1>Putte's</h1><br/>
-					<p>Music program as a team & Posters, 2015–2016</p>
-				</div>
-			</div>
-		</div>
-		<!-- END SECTION -->
-		<!-- SECTION -->
+
+  <!-- 1. image -->
+  <!-- replace YOUR_IMAGE -->
+  <div class="slide">
+    <img class="image" src="img/mervifestival.jpg" />
+  </div>
+
+  <!-- 3. text -->
+  <!-- replace TITLE_TEXT, MAIN_TEXT -->
+  <div class="slide">
+    <div class="text">
+      <h1>
+        Mervi Festival
+      </h1>
+      <br/>
+      <p>
+        Event concept & Visual identity with <nobr><a href="http://www.tonihalonen.com/Work" target="_blank">Toni Halonen</a></nobr>, 2015
+      </p>
+    </div>
+  </div>
+
+</div>
+
+		<div class="section">
+
+  <!-- 1. image -->
+  <!-- replace YOUR_IMAGE -->
+  <div class="slide">
+    <img class="image" src="img/hermes_aphrodite.jpg" />
+  </div>
+
+  <!-- 3. text -->
+  <!-- replace TITLE_TEXT, MAIN_TEXT -->
+  <div class="slide">
+    <div class="text">
+      <h1>
+        Hermes & Aphrodite
+      </h1>
+      <br/>
+      <p>
+        Poster with KABK students Verena Hahn & Tyrone Schorrer, 2017
+      </p>
+    </div>
+  </div>
+
+</div>
 
   <!-- 1. image -->
   <!-- replace YOUR_IMAGE -->
@@ -141,56 +170,27 @@
       </p>
     </div>
   </div>
-
-</div>
-
-		<div class="section">
-
-  <!-- 1. image -->
-  <!-- replace YOUR_IMAGE -->
-  <div class="slide">
-    <img class="image" src="img/hermes_aphrodite.jpg" />
   </div>
 
-  <!-- 3. text -->
-  <!-- replace TITLE_TEXT, MAIN_TEXT -->
-  <div class="slide">
-    <div class="text">
-      <h1>
-        Hermes & Aphrodite
-      </h1>
-      <br/>
-      <p>
-        Poster with KABK students Verena Hahn & Tyrone Schorrer, 2017
-      </p>
-    </div>
-  </div>
+<div class="section">
+			<div class="slide">
+				<img class='image' src="img/tinman.jpg" />
+			</div>
+			<div class="slide">
+				<img class='image' src="img/ronwilson.jpg" />
+			</div>
+			<div class="slide">
+				<img class='image' src="img/sotofett.jpg" />
+			</div>
+			<div class="slide">
+				<div class="text">
+					<h1>Putte's</h1><br/>
+					<p>Music program as a team & Posters, 2015–2016</p>
+				</div>
+			</div>
+		</div>
 
-</div>
 
-		<div class="section">
-
-  <!-- 1. image -->
-  <!-- replace YOUR_IMAGE -->
-  <div class="slide">
-    <img class="image" src="img/mervifestival.jpg" />
-  </div>
-
-  <!-- 3. text -->
-  <!-- replace TITLE_TEXT, MAIN_TEXT -->
-  <div class="slide">
-    <div class="text">
-      <h1>
-        Mervi Festival
-      </h1>
-      <br/>
-      <p>
-        Event concept & Visual identity with Toni Halonen, 2015
-      </p>
-    </div>
-  </div>
-
-</div>
 
 		<div class="section">
 			<div class="slide">
@@ -220,7 +220,7 @@
 			</div>
 			<div class="slide">
 				<div class="text">
-					<h1>wash</h1><br/>
+					<h1>Wash</h1><br/>
 					<p>Animation, 2017</p>
 				</div>
 			</div>
@@ -262,7 +262,7 @@ $(document).ready(function() {
 	var wW = $(window).width()
 	if (wW < 768) isMobile = true
 	$('#fullpage').fullpage({
-		anchors: ['kiki', 'putte', 'pingpong', 'hermesaphrodite', 'mervi', 'dialogue', 'wash', 'info', 'foot'],
+		anchors: ['kiki', 'mervi', 'hermesaphrodite', 'pingpong', 'putte', 'dialogue', 'wash', 'info', 'foot'],
 		menu: '#menu',
 		controlArrows: false
 	});
