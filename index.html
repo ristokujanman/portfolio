@@ -27,9 +27,14 @@
 			<li data-menuanchor="kiki" class="active">
 				<a href="#kiki">Kiki</a>
 			</li>
-			<li data-menuanchor="putte">
-				<a href="#putte">Putte</a>
+			<li data-menuanchor="putte" class="active">
+				<a href="#putte">Putte's</a>
 			</li>
+			
+			<li data-menuanchor="pingpong" class="active">
+  				<a href="#pingpong">Ping Pong</a>
+			</li>
+			
 			<li data-menuanchor="video">
 				<a href="#video">Video</a>
 			</li>
@@ -91,6 +96,44 @@
 		</div>
 		<!-- END SECTION -->
 		<!-- SECTION -->
+		
+		<div class="section">
+
+  <!-- 1. image -->
+  <!-- replace YOUR_IMAGE -->
+  <div class="slide">
+    <img class="image" src="img/pingpong1.jpg" />
+  </div>
+
+  <div class="slide">
+    <img class="image" src="img/pingpong2.jpg" />
+  </div>
+			
+  <div class="slide">
+    <img class="image" src="img/pingpong3.jpg" />
+  </div>
+			
+<div class="slide">
+    <img class="image" src="img/pingpong4.jpg" />
+  </div>
+
+  <!-- 3. text -->
+  <!-- replace TITLE_TEXT, MAIN_TEXT -->
+  <div class="slide">
+    <div class="text">
+      <h1>
+        Ping Pong
+      </h1>
+      <br/>
+      <p>
+        Interview Zine with Jung Lee, 2017
+      </p>
+    </div>
+  </div>
+
+</div>
+
+		
 		<div class="section">
 			<div class="slide">
 				<div class="embed">
@@ -142,7 +185,7 @@ $(document).ready(function() {
 	var wW = $(window).width()
 	if (wW < 768) isMobile = true
 	$('#fullpage').fullpage({
-		anchors: ['kiki', 'putte', 'video', 'info', 'foot'],
+		anchors: ['kiki', 'putte', 'pingpong', 'video', 'info', 'foot'],
 		menu: '#menu',
 		controlArrows: false
 	});
