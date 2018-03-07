@@ -30,11 +30,11 @@
 			<li data-menuanchor="putte">
 				<a href="#putte">Putte's</a>
 			</li>
-			
+
 			<li data-menuanchor="pingpong">
   				<a href="#pingpong">Ping Pong</a>
 			</li>
-			
+
 			<li data-menuanchor="hermesaphrodite">
   				<a href="#hermesaphrodite">Hermes & Aphrodite</a>
 			</li>
@@ -42,7 +42,7 @@
 			<li data-menuanchor="mervi" class="active">
   				<a href="#mervi">Mervi Festival</a>
 			</li>
-			
+
 			<li data-menuanchor="dialogue">
 				<a href="#dialogue">Dialogue</a>
 			</li>
@@ -50,7 +50,7 @@
 			<li data-menuanchor="wash">
 				<a href="#wash">wash</a>
 			</li>
-			
+
 			<li data-menuanchor="info">
 				<a href="#info">Info</a>
 			</li>
@@ -119,11 +119,11 @@
   <div class="slide">
     <img class="image" src="img/pingpong2.jpg" />
   </div>
-			
+
   <div class="slide">
     <img class="image" src="img/pingpong3.jpg" />
   </div>
-			
+
 <div class="slide">
     <img class="image" src="img/pingpong4.jpg" />
   </div>
@@ -191,7 +191,7 @@
   </div>
 
 </div>
-		
+
 		<div class="section">
 			<div class="slide">
 				<div class="embed">
@@ -227,7 +227,7 @@
 		</div>
 		<!-- END SECTION -->
 		<!-- SECTION -->
-		
+
 		<div class="section">
 			<div class="slide">
 				<div class="text">
@@ -269,6 +269,7 @@ $(document).ready(function() {
 });
 
 var isOverMenu = false
+var isOverLink = false
 
 $('body').css('cursor', 'none');
 
@@ -279,11 +280,17 @@ $('a').on('hover', function() {
 $('#header').on('mouseover', function() {
 	isOverMenu = true
 	$('#menu').show()
-})
-
-$('#header').on('mouseout', function() {
+}).on('mouseout', function() {
 	isOverMenu = false
 	$('#menu').hide()
+})
+
+$('a').on('mouseover', function() {
+	isOverLink = true
+	$('#arrow-right', '#arrow-left').hide();
+}).on('mouseout', function() {
+	isOverLink = false
+	$('#arrow-right', '#arrow-left').hide();
 })
 
 var breakPoint = $(window).width() / 2
@@ -299,27 +306,32 @@ $(document).on('click', function(event) {
 });
 
 $('body').on('mousemove', function(event) {
-	if (event.screenX > breakPoint) {
-		$('body').css('cursor', 'none');
-		$('#arrow-left').hide();
-		$('#arrow-right').show();
-		$('#arrow-right').css({
-			'top' :  (event.pageY - $(".arrow").height() / 2) + 'px',
-			'left' : (event.pageX - $(".arrow").width()) + 'px'
-		});
-	} else {
-		if (!isOverMenu) {
-			$('body').css('cursor', 'none');
-			$('#arrow-right').hide();
-			$('#arrow-left').show();
-			$('#arrow-left').css({
+	if (!isOverLink) {
+		if (event.screenX > breakPoint) {
+			$('#arrow-left').fadeOut(50, function(){
+				$('body').css('cursor', 'none');
+				$('#arrow-right').fadeIn(200);
+				$('#arrow-right').css({
 					'top' :  (event.pageY - $(".arrow").height() / 2) + 'px',
-					'left' : (event.pageX + 5) + 'px'
-			});
+					'left' : (event.pageX - $(".arrow").width()) + 'px'
+				});
+			})
 		} else {
-			$('#arrow-left').hide();
-			$('body').css('cursor', 'none');
+			if (!isOverMenu) {
+				$('#arrow-right').fadeOut(50, function() {
+					$('body').css('cursor', 'none');
+					$('#arrow-left').fadeIn(200);
+					$('#arrow-left').css({
+							'top' :  (event.pageY - $(".arrow").height() / 2) + 'px',
+							'left' : (event.pageX + 5) + 'px'
+					});
+				});
+			}
 		}
+	} else {
+		console.log('hide the ffjhfgfjhg arrows')
+		$('#arrow-right').hide();
+		$('#arrow-left').hide();
 	}
 })
 </script>

@@ -35,9 +35,9 @@
 }
 
 .embed {
-  margin-left: 5vw;
-  width: 90vw;
-  height: 50.6vw;
+  width: 60vw;
+  margin-left: calc((100vw - 60vw) / 2);
+  height: calc(60vw * (9 / 16));
 }
 
 .embed-container {
@@ -56,6 +56,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
   /* FULLPAGE STYLES    */
@@ -85,7 +86,7 @@
   a:visited {
     color: black;
     text-decoration: none;
-    cursor: none;
+    cursor: pointer;
   }
 
   a:hover {
