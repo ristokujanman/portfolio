@@ -137,9 +137,14 @@
 
   @font-face {
       font-family: 'orb15web';
-      src: url('../orb15web.otf') format('opentype');
-      font-style: normal;
+    src: url('orb15web-webfont.woff2') format('woff2'),
+         url('orb15web-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
   }
+
+}
+
 
   @font-face {
       font-family: 'dualistweb-1';
@@ -147,7 +152,6 @@
       	  font-weight: normal;
       	font-style: normal;
   }
-
 
   h1 {
       margin: 0;
