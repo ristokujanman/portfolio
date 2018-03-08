@@ -141,9 +141,6 @@
       font-style: normal;
   }
 
-}
-
-
   @font-face {
       font-family: 'dualistweb-1';
       src: url('../dualistweb-1.otf') format('opentype');
