@@ -8,6 +8,7 @@
       font-size: 150px !important;
       line-height: 175px !important;
       font: 'orb15web', serif;
+      font-weight: normal;
   }
 
   body {
@@ -143,7 +144,7 @@
   @font-face {
       font-family: 'dualistweb-1';
       src: url('../dualistweb-1.otf') format('opentype');
-      	font-weight: normal;
+      	  font-weight: normal;
       	font-style: normal;
   }
 
@@ -153,6 +154,8 @@
       font-size: 90px;
       line-height: 100px;
       font: 'orb15web', serif;
+      font-weight: normal;
+
   }
 
   p {
