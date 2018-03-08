@@ -5,8 +5,8 @@
 
   h1 {
       margin: 0;
-      font-size: 120px !important;
-      line-height: 140px !important;
+      font-size: 140px !important;
+      line-height: 162px !important;
       font: 'orb15web', serif;
       font-weight: normal;
   }
@@ -16,7 +16,7 @@
   }
 
   p {
-      font-size: 25px !important;
+      font-size: 24px !important;
       font-family: 'dualistweb-1', sans-serif;
   }
 
@@ -158,7 +158,7 @@
   }
 
   p {
-      font-size: 25px;
+      font-size: 24px;
       font-family: 'dualistweb-1', sans-serif;
   }
 
