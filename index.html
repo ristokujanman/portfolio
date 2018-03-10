@@ -27,13 +27,13 @@
 			<li data-menuanchor="kiki" class="active">
 				<a href="#kiki">Kiki</a>
 			</li>
-
-			<li data-menuanchor="mervi" class="active">
-  				<a href="#mervi">Mervi Festival</a>
-			</li>
 			
 			<li data-menuanchor="pingpong">
   				<a href="#pingpong">Ping Pong</a>
+			</li>
+			
+			<li data-menuanchor="mervi" class="active">
+  				<a href="#mervi">Mervi Festival</a>
 			</li>
 
 			<li data-menuanchor="hermesaphrodite">
@@ -41,7 +41,7 @@
 			</li
 
 			<li data-menuanchor="putte">
-				<a href="#putte">Putte's The Cellar</a>
+				<a href="#putte">Putte's</a>
 			</li>
 
 			<li data-menuanchor="dialogue">
@@ -98,22 +98,6 @@
     <img class="image" src="img/mervifestival.jpg" />
   </div>
 
-  <!-- 3. text -->
-  <!-- replace TITLE_TEXT, MAIN_TEXT -->
-  <div class="slide">
-    <div class="text">
-      <h1>
-        Mervi Festival
-      </h1>
-      <br/>
-      <p>
-        Visual identity with <nobr><a href="http://www.tonihalonen.com/Work" target="_blank">Toni Halonen</a></nobr>
-      </p>
-    </div>
-  </div>
-
-</div>
-
   <!-- 1. image -->
   <!-- replace YOUR_IMAGE -->
 <div class="section">
@@ -133,6 +117,23 @@
     <img class="image" src="img/pingpong4.jpg" />
   </div>
 
+  <!-- 3. text -->
+  <!-- replace TITLE_TEXT, MAIN_TEXT -->
+  <div class="slide">
+    <div class="text">
+      <h1>
+        Mervi Festival
+      </h1>
+      <br/>
+      <p>
+        Visual identity with <nobr><a href="http://www.tonihalonen.com/Work" target="_blank">Toni Halonen</a></nobr>
+      </p>
+    </div>
+  </div>
+
+</div>
+	
+	
   <!-- 3. text -->
   <!-- replace TITLE_TEXT, MAIN_TEXT -->
   <div class="slide">
@@ -262,7 +263,7 @@ $(document).ready(function() {
 	var wW = $(window).width()
 	if (wW < 768) isMobile = true
 	$('#fullpage').fullpage({
-		anchors: ['kiki', 'mervi', 'pingpong', 'hermesaphrodite', 'putte', 'dialogue', 'wash', 'info', 'foot'],
+		anchors: ['kiki', 'pingpong', 'mervi', 'hermesaphrodite', 'putte', 'dialogue', 'wash', 'info', 'foot'],
 		menu: '#menu',
 		controlArrows: false
 	});
