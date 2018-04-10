@@ -7,7 +7,7 @@
       margin: 0;
       font-size: 150px !important;
       line-height: 185px !important;
-      font: 'orb_proto_kerned_for_web', serif;
+      font: 'orb_proto_kerned_for_web-webfont', serif;
       font-weight: normal;
   }
 
@@ -137,7 +137,7 @@
 
   @font-face {
       font-family: 'orb15web';
-      src: url('../orb_proto_kerned_for_web.otf') format('opentype');
+      src: url('../orb_proto_kerned_for_web-webfont.woff') format('opentype');
       font-style: normal;
   }
 
@@ -152,7 +152,7 @@
       margin: 0;
       font-size: 90px;
       line-height: 110px;
-      font: 'orb_proto_kerned_for_web', serif;
+      font: 'orb_proto_kerned_for_web-webfont', serif;
       font-weight: normal;
 
   }
