@@ -18,7 +18,7 @@
   p {
       font-size: 25px !important;
       line-height: 40px !important;
-      font-family: 'dualist_kerned_for_web', sans-serif;
+      font-family: 'dualistireducedforweb-regular-webfont', sans-serif;
   }
 
   #header {
@@ -142,8 +142,8 @@
   }
 
   @font-face {
-      font-family: 'dualist_kerned_for_web';
-      src: url('../dualist_kerned_for_web.otf') format('opentype');
+      font-family: 'dualistireducedforweb-regular-webfont';
+      src: url('../dualistireducedforweb-regular-webfont.woff') format('opentype');
       	  font-weight: normal;
       	font-style: normal;
   }
@@ -160,7 +160,7 @@
   p {
       font-size: 25px;
       line-height: 40px !important;
-      font-family: 'dualist_kerned_for_web', sans-serif;
+      font-family: 'dualistireducedforweb-regular-webfont', sans-serif;
   }
 
   .arrow {
