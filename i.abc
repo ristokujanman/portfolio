@@ -1,17 +1,16 @@
-<!DOCTYPE HT>
 
-<ht>
+<html>
 
 <head profile="/favicon.ico">
 	<link rel="icon"
       	type="icon/ico"
      	 href="/favicon.ico">
 
-	<title>Risto Kujanpää</title>
+	<title>by request risto@ristokujanpaa.com</title>
 	<meta charset="utf-8">
 
 	<link href="stylesheets/styles.css" rel="stylesheet">
-	<!-- VENDOR -->
+
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.fullPage.js"></script>
@@ -56,7 +55,6 @@
 	</header>
 
 	<div id="fullpage">
-		<!-- SECTION -->
 		<div class="section">
 			<div class="slide">
 				<img class="image" src="img/kiki2.jpg" />
@@ -120,8 +118,6 @@
     <img class="image" src="img/hermes_aphrodite.jpg" />
   </div>
 
-  <!-- 3. text -->
-  <!-- replace TITLE_TEXT, MAIN_TEXT -->
   <div class="slide">
     <div class="text">
       <h1>
@@ -171,8 +167,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- END SECTION -->
-		<!-- SECTION -->
+
 
 <div class="section">
 			<div class="slide">
@@ -189,8 +184,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- END SECTION -->
-		<!-- SECTION -->
+
 
 		<div class="section">
 			<div class="slide">
@@ -204,14 +198,13 @@
 				</div>
 			</div>
 		</div>
-		<!-- END SECTION -->
-		<!-- FOOTER -->
+
 		<div class="section fp-auto-height">
 			<div class="slide">
 				<p id="footer"><a href="mailto:risto@ristokujanpaa.com">mail</a></p>
 			</div>
 		</div>
-		<!-- END FOOTER -->
+
 	</div>
 
 	<figure id="arrow-left" class="arrow">
