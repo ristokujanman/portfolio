@@ -7,18 +7,18 @@
       margin: 0;
       font-size: 25px !important;
       line-height: 30px !important;
-      font: 'arial', serif;
+      font: 'thein', sans-serif;
       font-weight: normal;
   }
 
   body {
-    font-family: ginto, serif;
+    font-family: thein, sans-serif;
   }
 
   p {
       font-size: 25px !important;
       line-height: 30px !important;
-      font-family: 'ginto', sans-serif;
+      font-family: 'thein', sans-serif;
   }
 
   #header {
@@ -125,7 +125,7 @@
     margin: 0;
     padding: 0;
     font-size:20px;
-    font-family: ginto, sans-serif;
+    font-family: thein, sans-serif;
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
        -khtml-user-select: none; /* Konqueror HTML */
@@ -137,7 +137,7 @@
 
   @font-face {
       font-family: 'ginto';
-      src: url('../Ginto.otf') format('truetype');
+      src: url('../Theinhardt-Regular.otf') format('opentype');
       font-style: normal;
   }
 
@@ -145,7 +145,7 @@
       margin: 0;
       font-size: 25px;
       line-height: 30px;
-      font: 'ginto', sans-serif;
+      font: 'thein', sans-serif;
       font-weight: normal;
 
   }
@@ -153,7 +153,7 @@
   p {
       font-size: 25px;
       line-height: 30px !important;
-      font-family: 'ginto', sans-serif;
+      font-family: 'thein', sans-serif;
   }
 
   .arrow {
