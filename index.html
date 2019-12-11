@@ -26,7 +26,11 @@
 		</p>
 		<ul id="menu">
 			
-			<li data-menuanchor="kiki" class="active">
+			<li data-menuanchor="hemisphere" class="active">
+				<a href="#hemisphere">Hemisphere</a>
+			</li>
+			
+			<li data-menuanchor="kiki">
 				<a href="#kiki">Kiki – Perspectives on Ballroom Culture</a>
 			</li>
 			
@@ -42,10 +46,6 @@
   				<a href="#mervi">Mervi Festival</a>
 			</li>
 
-			<li data-menuanchor="hemisphere">
-				<a href="#hemisphere">Hemisphere</a>
-			</li>
-
 			<li data-menuanchor="postbar">
 				<a href="#postbar">Post Bar</a>
 			</li>
@@ -57,6 +57,37 @@
 	</header>
 
 	<div id="fullpage">
+		<div class="section">
+
+  <div class="slide">
+    <img class="image" src="img/hemisphere1.jpg" />
+  </div>
+
+<div class="slide">
+    <img class="image" src="img/hemisphere2.jpg" />
+  </div>
+
+<div class="slide">
+    <img class="image" src="img/hemisphere3.jpg" />
+  </div>
+	
+<div class="slide">
+    <img class="image" src="img/hemisphere4.jpg" />
+  </div>
+	
+  <div class="slide">
+    <div class="text">
+      <h1>
+        Hemisphere
+      </h1>
+      <br/>
+      <p>
+        Typeface, Specimen & Sound Installation
+      </p>
+    </div>
+  </div>
+
+</div>	
 		<div class="section">
 			<div class="slide">
 				<img class="image" src="img/kiki2.jpg" />
@@ -157,38 +188,6 @@
 <div class="section">
 
   <div class="slide">
-    <img class="image" src="img/hemisphere1.jpg" />
-  </div>
-
-<div class="slide">
-    <img class="image" src="img/hemisphere2.jpg" />
-  </div>
-
-<div class="slide">
-    <img class="image" src="img/hemisphere3.jpg" />
-  </div>
-	
-<div class="slide">
-    <img class="image" src="img/hemisphere4.jpg" />
-  </div>
-	
-  <div class="slide">
-    <div class="text">
-      <h1>
-        Hemisphere
-      </h1>
-      <br/>
-      <p>
-        Typeface, Specimen & Sound Installation
-      </p>
-    </div>
-  </div>
-
-</div>	
-
-<div class="section">
-
-  <div class="slide">
     <img class="image" src="img/mervifestival.jpg" />
   </div>
 	
@@ -255,7 +254,7 @@ $(document).ready(function() {
 	var wW = $(window).width()
 	if (wW < 768) isMobile = true
 	$('#fullpage').fullpage({
-		anchors: ['kiki', 'pingpong', 'hermesaphrodite', 'mervi', 'hemisphere', 'postbar', 'info', 'foot'],
+		anchors: ['hemisphere', 'kiki', 'pingpong', 'hermesaphrodite', 'mervi', 'postbar', 'info', 'foot'],
 		menu: '#menu',
 		controlArrows: false
 	});
