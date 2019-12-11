@@ -30,6 +30,10 @@
 				<a href="#hemisphere">Hemisphere</a>
 			</li>
 			
+			<li data-menuanchor="postbar">
+				<a href="#postbar">Post Bar</a>
+			</li>
+			
 			<li data-menuanchor="kiki">
 				<a href="#kiki">Kiki – Perspectives on Ballroom Culture</a>
 			</li>
@@ -44,10 +48,6 @@
 			
 			<li data-menuanchor="mervi" class="active">
   				<a href="#mervi">Mervi Festival</a>
-			</li>
-
-			<li data-menuanchor="postbar">
-				<a href="#postbar">Post Bar</a>
 			</li>
 
 			<li data-menuanchor="info">
@@ -88,6 +88,27 @@
   </div>
 
 </div>	
+		
+		<div class="section">
+
+  <div class="slide">
+    <img class="image" src="img/postbar1.jpg" />
+  </div>
+	
+  <div class="slide">
+    <div class="text">
+      <h1>
+        Post Bar
+      </h1>
+      <br/>
+      <p>
+        Xx
+      </p>
+    </div>
+  </div>
+
+</div>	
+		
 		<div class="section">
 			<div class="slide">
 				<img class="image" src="img/kiki2.jpg" />
@@ -184,28 +205,7 @@
   </div>
 
 </div>	
-
-<div class="section">
-
-  <div class="slide">
-    <img class="image" src="img/postbar1.jpg" />
-  </div>
-	
-  <div class="slide">
-    <div class="text">
-      <h1>
-        Post Bar
-      </h1>
-      <br/>
-      <p>
-        Xx
-      </p>
-    </div>
-  </div>
-
-</div>	
-
-
+		
 		<div class="section">
 			<div class="slide">
 				<div class="text">
@@ -254,7 +254,7 @@ $(document).ready(function() {
 	var wW = $(window).width()
 	if (wW < 768) isMobile = true
 	$('#fullpage').fullpage({
-		anchors: ['hemisphere', 'kiki', 'pingpong', 'hermesaphrodite', 'mervi', 'postbar', 'info', 'foot'],
+		anchors: ['hemisphere', 'postbar', 'kiki', 'pingpong', 'hermesaphrodite', 'mervi', 'info', 'foot'],
 		menu: '#menu',
 		controlArrows: false
 	});
