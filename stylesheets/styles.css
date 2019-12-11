@@ -12,13 +12,13 @@
   }
 
   body {
-    font-family: arial, serif;
+    font-family: ginto, serif;
   }
 
   p {
       font-size: 25px !important;
       line-height: 30px !important;
-      font-family: 'arial', sans-serif;
+      font-family: 'ginto', sans-serif;
   }
 
   #header {
@@ -125,7 +125,7 @@
     margin: 0;
     padding: 0;
     font-size:20px;
-    font-family: arial, sans-serif;
+    font-family: ginto, sans-serif;
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
        -khtml-user-select: none; /* Konqueror HTML */
@@ -136,8 +136,8 @@
   }
 
   @font-face {
-      font-family: 'arial';
-      src: url('../arial.ttf') format('truetype');
+      font-family: 'ginto';
+      src: url('../Ginto.otf') format('truetype');
       font-style: normal;
   }
 
@@ -145,7 +145,7 @@
       margin: 0;
       font-size: 25px;
       line-height: 30px;
-      font: 'arial', sans-serif;
+      font: 'ginto', sans-serif;
       font-weight: normal;
 
   }
@@ -153,7 +153,7 @@
   p {
       font-size: 25px;
       line-height: 30px !important;
-      font-family: 'arial', sans-serif;
+      font-family: 'ginto', sans-serif;
   }
 
   .arrow {
