@@ -79,30 +79,7 @@ $(document).ready(function() {
 	});
 });
 
-var isOverMenu = false
-var isOverLink = false
 
-$('body').css('cursor', 'none');
-
-$('a').on('hover', function() {
-	$('body').css('cursor', 'none')
-})
-
-$('#header').on('mouseover', function() {
-	isOverMenu = true
-	$('#menu').show()
-}).on('mouseout', function() {
-	isOverMenu = false
-	$('#menu').hide()
-})
-
-$('a').on('mouseover', function() {
-	isOverLink = true
-	$('#arrow-right', '#arrow-left').hide();
-}).on('mouseout', function() {
-	isOverLink = false
-	$('#arrow-right', '#arrow-left').hide();
-})
 
 var breakPoint = $(window).width() / 2
 
