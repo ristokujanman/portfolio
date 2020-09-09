@@ -26,12 +26,12 @@
 		</p>
 		<ul id="menu">
 			
-			<li data-menuanchor="typedesign">
-				<a href="#typedesign">Type Design</a>
+			<li data-menuanchor="picture">
+				<a href="#picture">Picture</a>
 			</li>
 			
-			<li data-menuanchor="installation" class="active">
-				<a href="#installation">Installation</a>
+			<li data-menuanchor="video" class="active">
+				<a href="#video">Video</a>
 			</li>
 			
 			<li data-menuanchor="research">
@@ -188,7 +188,7 @@ $(document).ready(function() {
 	var wW = $(window).width()
 	if (wW < 768) isMobile = true
 	$('#fullpage').fullpage({
-		anchors: ['typedesign', 'installation', 'research', 'about', 'foot'],
+		anchors: ['picture', 'video', 'research', 'about', 'foot'],
 		menu: '#menu',
 		controlArrows: false
 	});
