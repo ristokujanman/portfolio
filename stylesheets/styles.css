@@ -139,13 +139,13 @@ s@media only screen and (max-width: 768px) {
 
   @font-face {
       font-family: 'theregular';
-      src: url('../theregular.otf') format('opentype');
+      src: url('../Theinhardt-Regular.otf') format('opentype');
       font-style: normal;
   }
 
   @font-face {
       font-family: 'thecursive';
-      src: url('../thecursive.otf') format('opentype');
+      src: url('../Theinhardt-RegularIta.otf') format('opentype');
       font-style: normal;
   }
 
