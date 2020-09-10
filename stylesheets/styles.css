@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+s@media only screen and (max-width: 768px) {
   br {
     display: none;
   }
@@ -7,19 +7,19 @@
       margin: 0;
       font-size: 17px !important;
       line-height: 20px !important;
-      font: 'Cursive', sans-serif;
+      font: 'thecursive', sans-serif;
       font-weight: italic;
   }
 
   body {
-    font-family: 'Regular', sans-serif;
+    font-family: 'theregular', sans-serif;
     font-weight: normal;
   }
 
   p {
       font-size: 17px !important;
       line-height: 20px !important;
-      font-family: 'Regular', sans-serif;
+      font-family: 'theregular', sans-serif;
       font-weight: normal;
   }
 
@@ -127,7 +127,7 @@
     margin: 0;
     padding: 0;
     font-size:17px;
-    font-family: 'Regular', sans-serif;
+    font-family: 'theregular', sans-serif;
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
        -khtml-user-select: none; /* Konqueror HTML */
@@ -138,14 +138,14 @@
   }
 
   @font-face {
-      font-family: 'Regular';
-      src: url('../Regular.otf') format('opentype');
+      font-family: 'theregular';
+      src: url('../theregular.otf') format('opentype');
       font-style: normal;
   }
 
   @font-face {
-      font-family: 'Cursive';
-      src: url('../Cursive.otf') format('opentype');
+      font-family: 'thecursive';
+      src: url('../thecursive.otf') format('opentype');
       font-style: italic;
   }
 
@@ -153,7 +153,7 @@
       margin: 0;
       font-size: 17px;
       line-height: 20px;
-      font: 'Cursive', sans-serif;
+      font: 'thecursive', sans-serif;
       font-weight: italic;
 
   }
@@ -161,7 +161,7 @@
   p {
       font-size: 17px;
       line-height: 20px !important;
-      font-family: 'Regular', sans-serif;
+      font-family: 'theregular', sans-serif;
   }
 
   .arrow {
