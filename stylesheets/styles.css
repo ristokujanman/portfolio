@@ -7,18 +7,20 @@
       margin: 0;
       font-size: 17px !important;
       line-height: 20px !important;
-      font: 'thein', sans-serif;
-      font-weight: normal;
+      font: 'thein2', sans-serif;
+      font-weight: medium;
   }
 
   body {
     font-family: thein, sans-serif;
+    font-weight: thin;
   }
 
   p {
       font-size: 17px !important;
       line-height: 20px !important;
       font-family: 'thein', sans-serif;
+      font-weight: thin;
   }
 
   #header {
@@ -137,8 +139,14 @@
 
   @font-face {
       font-family: 'thein';
-      src: url('../Theinhardt-Regular.otf') format('opentype');
-      font-style: normal;
+      src: url('../Theinhardt-Light.otf') format('opentype');
+      font-style: thin;
+  }
+
+  @font-face {
+      font-family: 'thein2';
+      src: url('../Theinhardt-Medium.otf') format('opentype');
+      font-style: medium;
   }
 
   h1 {
@@ -146,7 +154,7 @@
       font-size: 17px;
       line-height: 20px;
       font: 'thein', sans-serif;
-      font-weight: normal;
+      font-weight: medium;
 
   }
 
