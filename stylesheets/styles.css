@@ -8,7 +8,7 @@
       font-size: 17px !important;
       line-height: 20px !important;
       font: 'Theinhardt-Medium', sans-serif;
-      font-weight: medium;
+      font-weight: normal;
   }
 
   body {
@@ -146,7 +146,7 @@
   @font-face {
       font-family: 'thein2';
       src: url('../Theinhardt-Medium.otf') format('opentype');
-      font-style: medium;
+      font-style: normal;
   }
 
   h1 {
@@ -154,7 +154,7 @@
       font-size: 17px;
       line-height: 20px;
       font: 'Theinhardt-Medium', sans-serif;
-      font-weight: medium;
+      font-weight: normal;
 
   }
 
