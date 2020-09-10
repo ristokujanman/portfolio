@@ -8,7 +8,7 @@ s@media only screen and (max-width: 768px) {
       font-size: 17px !important;
       line-height: 20px !important;
       font: 'thecursive', sans-serif;
-      font-weight: italic;
+      font-weight: normal;
   }
 
   body {
@@ -146,7 +146,7 @@ s@media only screen and (max-width: 768px) {
   @font-face {
       font-family: 'thecursive';
       src: url('../thecursive.otf') format('opentype');
-      font-style: italic;
+      font-style: normal;
   }
 
   h1 {
@@ -154,7 +154,7 @@ s@media only screen and (max-width: 768px) {
       font-size: 17px;
       line-height: 20px;
       font: 'thecursive', sans-serif;
-      font-weight: italic;
+      font-weight: normal;
 
   }
 
