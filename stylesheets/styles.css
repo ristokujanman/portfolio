@@ -7,19 +7,19 @@
       margin: 0;
       font-size: 17px !important;
       line-height: 20px !important;
-      font: 'cursive', sans-serif;
+      font: 'Cursive', sans-serif;
       font-weight: italic;
   }
 
   body {
-    font-family: regular, sans-serif;
+    font-family: 'Regular', sans-serif;
     font-weight: normal;
   }
 
   p {
       font-size: 17px !important;
       line-height: 20px !important;
-      font-family: 'regular', sans-serif;
+      font-family: 'Regular', sans-serif;
       font-weight: normal;
   }
 
@@ -127,7 +127,7 @@
     margin: 0;
     padding: 0;
     font-size:17px;
-    font-family: regular, sans-serif;
+    font-family: 'Regular', sans-serif;
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
        -khtml-user-select: none; /* Konqueror HTML */
@@ -138,13 +138,13 @@
   }
 
   @font-face {
-      font-family: 'regular';
+      font-family: 'Regular';
       src: url('../Regular.otf') format('opentype');
       font-style: normal;
   }
 
   @font-face {
-      font-family: 'cursive';
+      font-family: 'Cursive';
       src: url('../Cursive.otf') format('opentype');
       font-style: italic;
   }
@@ -153,7 +153,7 @@
       margin: 0;
       font-size: 17px;
       line-height: 20px;
-      font: 'cursive', sans-serif;
+      font: 'Cursive', sans-serif;
       font-weight: italic;
 
   }
@@ -161,7 +161,7 @@
   p {
       font-size: 17px;
       line-height: 20px !important;
-      font-family: 'regular', sans-serif;
+      font-family: 'Regular', sans-serif;
   }
 
   .arrow {
