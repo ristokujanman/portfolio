@@ -7,19 +7,21 @@ s@media only screen and (max-width: 768px) {
       margin: 0;
       font-size: 17px !important;
       line-height: 20px !important;
-      font: 'thecursive', sans-serif;
-      font-weight: normal;
+      font: 'itathe', sans-serif;
+      font-weight: italic;
   }
 
   body {
-    font-family: 'theregular', sans-serif;
-    font-weight: normal;
+        font-size: 17px !important;
+        line-height: 20px !important;
+      font-family: 'thein', sans-serif;
+      font-weight: normal;
   }
 
   p {
       font-size: 17px !important;
       line-height: 20px !important;
-      font-family: 'theregular', sans-serif;
+      font-family: 'thein', sans-serif;
       font-weight: normal;
   }
 
@@ -127,7 +129,7 @@ s@media only screen and (max-width: 768px) {
     margin: 0;
     padding: 0;
     font-size:17px;
-    font-family: 'theregular', sans-serif;
+    font-family: 'thein', sans-serif;
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
        -khtml-user-select: none; /* Konqueror HTML */
@@ -138,30 +140,38 @@ s@media only screen and (max-width: 768px) {
   }
 
   @font-face {
-      font-family: 'theregular';
+      font-family: 'thein';
       src: url('../Theinhardt-Regular.otf') format('opentype');
       font-style: normal;
   }
 
   @font-face {
-      font-family: 'thecursive';
+      font-family: 'itathe';
       src: url('../Theinhardt-RegularIta.otf') format('opentype');
-      font-style: normal;
+      font-style: italic;
   }
 
   h1 {
       margin: 0;
       font-size: 17px;
       line-height: 20px;
-      font: 'thecursive', sans-serif;
-      font-weight: normal;
+      font: 'itathe', sans-serif;
+      font-weight: italic;
 
+  }
+
+  body {
+      font-size: 17px;
+      line-height: 20px !important;
+      font-family: 'thein', sans-serif;
+      font-weight: normal;
   }
 
   p {
       font-size: 17px;
       line-height: 20px !important;
-      font-family: 'theregular', sans-serif;
+      font-family: 'thein', sans-serif;
+      font-weight: normal;
   }
 
   .arrow {
