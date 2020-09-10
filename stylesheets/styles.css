@@ -8,7 +8,7 @@
       font-size: 17px !important;
       line-height: 20px !important;
       font: 'cursive', sans-serif;
-      font-weight: cursive;
+      font-weight: italic;
   }
 
   body {
@@ -146,7 +146,7 @@
   @font-face {
       font-family: 'cursive';
       src: url('../Cursive.otf') format('opentype');
-      font-style: cursive;
+      font-style: italic;
   }
 
   h1 {
@@ -154,7 +154,7 @@
       font-size: 17px;
       line-height: 20px;
       font: 'cursive', sans-serif;
-      font-weight: cursive;
+      font-weight: italic;
 
   }
 
