@@ -12,14 +12,14 @@
   }
 
   body {
-    font-family: thein, sans-serif;
+    font-family: Theinhardt-Light, sans-serif;
     font-weight: thin;
   }
 
   p {
       font-size: 17px !important;
       line-height: 20px !important;
-      font-family: 'thein', sans-serif;
+      font-family: 'Theinhardt-Light', sans-serif;
       font-weight: thin;
   }
 
@@ -127,7 +127,7 @@
     margin: 0;
     padding: 0;
     font-size:17px;
-    font-family: thein, sans-serif;
+    font-family: Theinhardt-Light, sans-serif;
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
        -khtml-user-select: none; /* Konqueror HTML */
@@ -153,7 +153,7 @@
       margin: 0;
       font-size: 17px;
       line-height: 20px;
-      font: 'thein', sans-serif;
+      font: 'Theinhardt-Medium', sans-serif;
       font-weight: medium;
 
   }
@@ -161,7 +161,7 @@
   p {
       font-size: 17px;
       line-height: 20px !important;
-      font-family: 'thein', sans-serif;
+      font-family: 'Theinhardt-Light', sans-serif;
   }
 
   .arrow {
