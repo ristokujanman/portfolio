@@ -7,19 +7,19 @@
       margin: 0;
       font-size: 17px !important;
       line-height: 20px !important;
-      font: 'Medium', sans-serif;
+      font: 'medium', sans-serif;
       font-weight: normal;
   }
 
   body {
-    font-family: Regular, sans-serif;
+    font-family: regular, sans-serif;
     font-weight: normal;
   }
 
   p {
       font-size: 17px !important;
       line-height: 20px !important;
-      font-family: 'Regular', sans-serif;
+      font-family: 'regular', sans-serif;
       font-weight: normal;
   }
 
@@ -127,7 +127,7 @@
     margin: 0;
     padding: 0;
     font-size:17px;
-    font-family: Regular, sans-serif;
+    font-family: regular, sans-serif;
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
        -khtml-user-select: none; /* Konqueror HTML */
@@ -153,7 +153,7 @@
       margin: 0;
       font-size: 17px;
       line-height: 20px;
-      font: 'Medium', sans-serif;
+      font: 'medium', sans-serif;
       font-weight: normal;
 
   }
@@ -161,7 +161,7 @@
   p {
       font-size: 17px;
       line-height: 20px !important;
-      font-family: 'Regular', sans-serif;
+      font-family: 'regular', sans-serif;
   }
 
   .arrow {
