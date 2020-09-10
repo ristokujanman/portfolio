@@ -7,8 +7,8 @@
       margin: 0;
       font-size: 17px !important;
       line-height: 20px !important;
-      font: 'medium', sans-serif;
-      font-weight: medium;
+      font: 'cursive', sans-serif;
+      font-weight: cursive;
   }
 
   body {
@@ -144,17 +144,17 @@
   }
 
   @font-face {
-      font-family: 'medium';
-      src: url('../Medium.otf') format('opentype');
-      font-style: medium;
+      font-family: 'cursive';
+      src: url('../Cursive.otf') format('opentype');
+      font-style: cursive;
   }
 
   h1 {
       margin: 0;
       font-size: 17px;
       line-height: 20px;
-      font: 'medium', sans-serif;
-      font-weight: medium;
+      font: 'cursive', sans-serif;
+      font-weight: cursive;
 
   }
 
