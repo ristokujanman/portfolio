@@ -7,8 +7,8 @@ s@media only screen and (max-width: 768px) {
       margin: 0;
       font-size: 17px !important;
       line-height: 20px !important;
-      font: 'itathe', sans-serif;
-      font-weight: italic;
+      font: 'thein', sans-serif;
+      font-weight: normal;
   }
 
   body {
@@ -146,9 +146,9 @@ s@media only screen and (max-width: 768px) {
   }
 
   @font-face {
-      font-family: 'itathe';
+      font-family: 'thein';
       src: url('../Theinhardt-RegularIta.otf') format('opentype');
-      font-style: italic;
+      font-style: normal;
   }
 
   h1 {
@@ -156,7 +156,7 @@ s@media only screen and (max-width: 768px) {
       font-size: 17px;
       line-height: 20px;
       font: 'itathe', sans-serif;
-      font-weight: italic;
+      font-weight: normal;
 
   }
 
