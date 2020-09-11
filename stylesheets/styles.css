@@ -145,17 +145,11 @@ s@media only screen and (max-width: 768px) {
       font-style: normal;
   }
 
-  @font-face {
-      font-family: 'thein';
-      src: url('../Theinhardt-RegularIta.otf') format('opentype');
-      font-style: normal;
-  }
-
   h1 {
       margin: 0;
       font-size: 17px;
       line-height: 20px;
-      font: 'itathe', sans-serif;
+      font: 'thein', sans-serif;
       font-weight: normal;
 
   }
